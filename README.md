@@ -1,73 +1,110 @@
-# Welcome to your Lovable project
+# 🗂️ Job Tracker — Personal ATS
 
-## Project info
+A personal Applicant Tracking System (ATS) to manage your job search end-to-end. Track applications, contacts, tasks, and reminders — with analytics to help you land the offer faster.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## ✨ Features
 
-There are several ways of editing your application.
+- **Kanban Pipeline** — Drag-and-drop board to move applications through stages (Applied → Screening → Interview → Offer → Rejected)
+- **Full CRUD** — Manage Jobs, Companies, Contacts, Applications, Tasks, and Notes
+- **Calendar View** — See upcoming interviews, follow-ups, and deadlines at a glance
+- **File Uploads** — Attach resumes and cover letters directly to applications
+- **Reminders & Notifications** — Email/push alerts for interviews and follow-ups, with snooze and recurring task support
+- **Import / Export** — Bulk import from CSV or Google Sheets; export all data as CSV or JSON
+- **Analytics Dashboard** — Track applications per week, response rates, stage drop-offs, and time-to-offer
+- **Auth & Security** — Secure login via email or OAuth; single-user scope with field validation and optimistic UI
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+| Layer | Technology |
+|---|---|
+| Frontend | React + Vite + TypeScript |
+| Styling | Tailwind CSS + shadcn/ui |
+| Backend | FastAPI / Express / Supabase / Firebase |
+| Database | PostgreSQL / SQLite |
+| Auth | Email / OAuth |
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🚀 Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
 
-Follow these steps:
+- [Node.js & npm](https://github.com/nvm-sh/nvm#installing-and-updating) (install via nvm)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+### Installation
+
+```bash
+# 1. Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# 2. Navigate into the project
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# 3. Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4. Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The app will be available at `http://localhost:5173` with hot-reloading enabled.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 📐 Data Model
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+| Entity | Description |
+|---|---|
+| `Job` | A job listing (title, description, URL, salary) |
+| `Company` | Employer details |
+| `Contact` | Recruiters or hiring managers at a company |
+| `Application` | A specific application linking a Job + Company |
+| `Stage` | The current pipeline stage of an application |
+| `Task` | Follow-up actions and reminders |
+| `Note` | Free-form notes tied to an application |
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 📊 Analytics
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The dashboard surfaces key metrics to optimize your job search:
 
-## How can I deploy this project?
+- Applications submitted per week
+- Recruiter response rate
+- Stage-by-stage drop-off funnel
+- Average time from application to offer
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## ✏️ Editing the Code
 
-Yes, you can!
+**Via Lovable (recommended)**
+Visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and prompt directly. Changes commit automatically.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+**Via your local IDE**
+Clone the repo, make changes, and push — Lovable syncs automatically.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+**Via GitHub**
+Use the pencil icon on any file in the GitHub UI to edit and commit in-browser.
+
+**Via GitHub Codespaces**
+Open a Codespace from the repo's Code button for a full cloud IDE experience.
+
+---
+
+## 🚢 Deployment
+
+Open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and go to **Share → Publish**.
+
+To connect a custom domain, go to **Project → Settings → Domains → Connect Domain**.
+See the [custom domain docs](https://docs.lovable.dev/features/custom-domain#custom-domain) for details.
+
+---
+
+## 📄 License
+
+MIT — feel free to fork and adapt for your own job search.
